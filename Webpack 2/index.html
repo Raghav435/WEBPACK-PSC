@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <select id="sortNames" onchange="handleNameSort()">
+        <option value="">Sort By Names</option>
+        <option value="ascending">Ascending</option>
+        <option value="descending">Descending</option>
+      </select>
+      <select id="filterRole" onchange="handleRoleFilter()">
+        <option value="">Filter by Role</option>
+        <option value="shoes">Shoes</option>
+        <option value="hoodie">Hoodie</option>
+        <option value="pants">Pants</option>
+        <option value="sorts">Shorts</option>
+        <option value="tee">Tee</option>
+      </select>
+    <div id="container"></div>
+</body>
+</html>
+<script src="./scripts/index.js" type="module"></script>
